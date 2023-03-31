@@ -1,0 +1,45 @@
+/* Style for the select elements */
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 45%;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the labels */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  /* Style for the disabled select elements */
+  select[disabled] {
+    opacity: 0.5;
+  }
+  #selected-values {
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  #selected-values th {
+    background-color: #ddd;
+    padding: 10px;
+    text-align: left;
+    width: 45%;
+  }
+  
+  #selected-values td {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  #selected-values tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  

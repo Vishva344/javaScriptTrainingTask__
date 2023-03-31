@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+
+  <title>Select -task</title>
+</head>
+<body>
+  <label for="country-select">Country:</label>
+  <select id="country-select">
+    <option value="">Select a country</option>
+    <option value="us">United States</option>
+    <option value="ca">Canada</option>
+  </select>
+
+  <label for="state-select">State:</label>
+  <select id="state-select" disabled>
+    <option value="">Select a state</option>
+  </select>
+
+  <label for="city-select">City:</label>
+  <select id="city-select" disabled>
+    <option value="">Select a city</option>
+  </select>
+  
+
+  <table id="selected-values">
+    <thead>
+      <tr>
+        <th>Country</th>
+        <th>State</th>
+        <th>City</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
