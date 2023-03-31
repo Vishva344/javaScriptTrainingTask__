@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body class="m-4">
+    <div class="main d-flex">
+      <div class="formsection">
+        <form action="" class="mr-4">
+          <h5>Form</h5>
+
+          <div class="row mb-4">
+            <label for="name" class="col-sm-2 col-form-label">Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="name" />
+            </div>
+          </div>
+          <div class="row mb-4">
+            <label for="age" class="col-sm-2 col-form-label">Age</label>
+            <div class="col-sm-10">
+              <input type="number" class="form-control" id="age" />
+            </div>
+          </div>
+          <div class="row mb-4">
+            <label for="city" class="col-sm-2 col-form-label">City</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="city" />
+            </div>
+          </div>
+          <div class="row mb-4">
+            <label for="state" class="col-sm-2 col-form-label">State</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="state" required />
+            </div>
+          </div>
+          <button type="submit" class="btn btn-dark" onclick="add()">
+            Submit
+          </button>
+          <span id="updatebtn"></span>
+        </form>
+      </div>
+      <div class="tablesection">
+        <div class="top-table d-flex">
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon2">Search</span>
+            <input
+              type="text"
+              class="form-control"
+              id="searchbar"
+              aria-label="Recipient's username"
+              aria-describedby="basic-addon2"
+              onkeyup="searchbar()"
+            />
+          </div>
+          <div class="clearbtn">
+            <button onclick="clearLocalStorage()">clear local strage</button>
+          </div>
+        </div>
+
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>
+                <button onclick="sortData('username')" class="btn btn-light">
+                  Name
+                </button>
+              </th>
+              <th>
+                <button onclick="sortData('age')" class="btn btn-light">
+                  Age
+                </button>
+              </th>
+              <th>
+                <button onclick="sortData('city')" class="btn btn-light">
+                  city
+                </button>
+              </th>
+              <th>
+                <button onclick="sortData('state')" class="btn btn-light">
+                  state
+                </button>
+              </th>
+              <th>Delete</th>
+              <th>Edit</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

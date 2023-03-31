@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+  }
+  
+  .main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .formsection {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .tablesection {
+    flex: 2;
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .row {
+    margin-bottom: 15px;
+  }
+  
+  .col-form-label {
+    font-weight: bold;
+  }
+  
+  .btn-dark {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .top-table {
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .clearbtn {
+    display: flex;
+    align-items: center;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
+  .table th,
+  .table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .btn-light {
+    background-color: #f2f2f2;
+    color: #333;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  input[type="text"]:focus,
+  input[type="number"]:focus {
+    outline: none;
+    border: 1px solid #333;
+  }
+  
+  input[type="submit"],
+  button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  button {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
